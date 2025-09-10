@@ -1,13 +1,4 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitch,
-  Twitter,
-} from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useRef } from "react";
@@ -15,8 +6,8 @@ import emailjs from "emailjs-com";
 
 export const ContactSection = () => {
   const { toast } = useToast();
+  const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,25 +17,24 @@ export const ContactSection = () => {
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
+        formRef.current,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           toast({
             title: "Message sent!",
-            description:
-              "Thank you for your message. I'll get back to you soon.",
+            description: "Thank you for your message. I'll get back to you soon.",
           });
+          formRef.current.reset();
           setIsSubmitting(false);
-          form.current.reset();
         },
         (error) => {
+          console.error(error);
           toast({
             title: "Error",
-            description: "Something went wrong. Please try again later.",
+            description: "Failed to send message. Please try again later.",
           });
-          console.error(error);
           setIsSubmitting(false);
         }
       );
@@ -54,7 +44,7 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="text-primary">Touch</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -104,9 +94,9 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">
+                  <span className="text-muted-foreground">
                     {import.meta.env.VITE_CONTACT_LOCATION}
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
@@ -114,17 +104,12 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href={import.meta.env.VITE_LINKEDIN} target="_blank">
+                <a
+                  href={import.meta.env.VITE_LINKEDIN}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin />
-                </a>
-                <a href={import.meta.env.VITE_TWITTER} target="_blank">
-                  <Twitter />
-                </a>
-                <a href={import.meta.env.VITE_INSTAGRAM} target="_blank">
-                  <Instagram />
-                </a>
-                <a href={import.meta.env.VITE_TWITCH} target="_blank">
-                  <Twitch />
                 </a>
               </div>
             </div>
@@ -134,7 +119,7 @@ export const ContactSection = () => {
           <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
@@ -145,7 +130,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Your Name..."
                 />
               </div>
 
@@ -159,15 +144,12 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Your Message
                 </label>
                 <textarea
@@ -175,7 +157,7 @@ export const ContactSection = () => {
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Write your message..."
                 />
               </div>
 
