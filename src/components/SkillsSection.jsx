@@ -3,35 +3,38 @@ import { cn } from "../lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
+  { name: "HTML", level: 95, category: "frontend" },
+  { name: "CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
   { name: "React", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Razor Pages", level: 75, category: "frontend" },
+  { name: "Bootstrap", level: 90, category: "frontend" },
 
   // Backend
   { name: "Java", level: 80, category: "backend" },
   { name: "C#", level: 80, category: "backend" },
   { name: "Python", level: 85, category: "backend" },
   { name: "PHP (Laravel)", level: 85, category: "backend" },
+  { name: "Laravel", level: 95, category: "backend" },
   { name: "Django", level: 75, category: "backend" },
-  { name: "ASP.NET Core MVC", level: 80, category: "backend" },
-  { name: "PL/SQL & SQL", level: 80, category: "backend" },
+  { name: "ASP.NET", level: 80, category: "backend" },
+  { name: "PL/SQL", level: 80, category: "backend" },
+  { name: "SQL", level: 90, category: "backend" },
 
   // Databases
   { name: "MySQL", level: 80, category: "database" },
   { name: "Oracle", level: 75, category: "database" },
   { name: "ER Modeling", level: 80, category: "database" },
-  { name: "UMerise", level: 85, category: "database" },
+  { name: "Merise", level: 85, category: "database" },
 
   // Tools & Methodologies
   { name: "Git/GitHub", level: 90, category: "tools" },
   { name: "StarUML", level: 100, category: "tools" },
   { name: "UML", level: 85, category: "tools" },
-  { name: "ER Modeling", level: 80, category: "tools" },
+  { name: "Eclipse", level: 85, category: "tools" },
   { name: "VS Code", level: 90, category: "tools" },
   { name: "Visual Studio", level: 85, category: "tools" },
-  { name: "Talend (ETL)", level: 70, category: "tools" },
+  { name: "Postman", level: 70, category: "tools" },
 ];
 
 

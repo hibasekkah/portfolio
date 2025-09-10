@@ -5,8 +5,8 @@ const projects = [
     id: 1,
     title: "MorocAntik",
     Description: "Designed and developed a full-stack e-commerce website for Moroccan traditional products",
-    image: "projects/project1.jpg",
-    tags: ["React", "Tailwind", "Django", "JWT", "MVC"],
+    image: "projects/project1.png",
+    tags: ["React", "Tailwind", "Django", "JWT", "MVC", "SqLite"],
     demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7370163765234929666/",
     gituburl: "https://github.com/hibasekkah/E-commerce-WebSite"
   },
@@ -14,38 +14,20 @@ const projects = [
     id: 2,
     title: "PowerLearn",
     Description: "Responsive ASP.NET web application for managing a training center",
-    image: "projects/project2.jpg",
-    tags: ["ASP.Net", "Bootstrap", "JS", "HTML"],
+    image: "projects/project2.png",
+    tags: ["ASP.Net", "Bootstrap", "JS", "HTML", "SqlServer", "MVC"],
     demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7288190055834148864/",
     gituburl: "https://github.com/hibasekkah/Siteweb-de-gestion-de-centre-de-formation"
   },
   {
     id: 3,
-    title: "Chat App",
-    Description: "A real-time chat application with authentication and private chat rooms.",
-    image: "projects/project3.jpg",
-    tags: ["React", "Firebase", "Tailwind"],
-    demoUrl: "https://mychatapp.com",
-    gituburl: "https://github.com/username/chat-app"
+    title: "Plenitude Education",
+    Description: "full-stack web application to digitize and streamline professional training management.",
+    image: "projects/project3.png",
+    tags: ["React", "Laravel", "Tailwind", "JWT", "MVC", "MySQL"],
+    demoUrl: "#",
+    gituburl: "https://github.com/hibasekkah/PlenitudeEducation"
   },
-  {
-    id: 4,
-    title: "Task Manager",
-    Description: "A productivity tool to manage tasks with drag-and-drop and due date reminders.",
-    image: "projects/project4.jpg",
-    tags: ["Vue", "Node.js", "MongoDB"],
-    demoUrl: "https://mytaskmanager.com",
-    gituburl: "https://github.com/username/task-manager"
-  },
-  {
-    id: 5,
-    title: "Weather Dashboard",
-    Description: "An interactive weather forecast app with charts and location search.",
-    image: "projects/project5.jpeg",
-    tags: ["React", "OpenWeather API", "Chart.js"],
-    demoUrl: "https://myweatherapp.com",
-    gituburl: "https://github.com/username/weather-dashboard"
-  }
 ];
 
 export const ProjectsSection = () =>{
@@ -95,7 +77,7 @@ export const ProjectsSection = () =>{
                                     <ExternalLink size={20}/>
                                 </a>
                                 <a 
-                                href={project.demoUrl}
+                                href={project.gituburl}
                                 target="_blank"
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                 >
