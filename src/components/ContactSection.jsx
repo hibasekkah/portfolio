@@ -65,10 +65,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href={`mailto:${import.meta.env.VITE_CONTACT_EMAIL}`}
+                    href={`mailto:hibasekkah@gmail.com`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {import.meta.env.VITE_CONTACT_EMAIL}
+                    hibasekkah@gmail.com
                   </a>
                 </div>
               </div>
@@ -80,10 +80,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
-                    href={`tel:${import.meta.env.VITE_CONTACT_PHONE}`}
+                    href={`tel:+212635605827`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {import.meta.env.VITE_CONTACT_PHONE}
+                    +212635605827
                   </a>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Location</h4>
                   <span className="text-muted-foreground">
-                    {import.meta.env.VITE_CONTACT_LOCATION}
+                    Fez, Morocco.
                   </span>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a
-                  href={import.meta.env.VITE_LINKEDIN}
+                  href="https://www.linkedin.com/in/hiba-sekkah-08b20a295/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
