@@ -3,21 +3,21 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Store",
-    Description: "A full-stack e-commerce web app with product listings, cart, and Stripe payments.",
+    title: "MorocAntik",
+    Description: "Designed and developed a full-stack e-commerce website for Moroccan traditional products",
     image: "projects/project1.jpg",
-    tags: ["React", "Tailwind", "Supabase", "Stripe"],
-    demoUrl: "https://myecommerce-demo.com",
-    gituburl: "https://github.com/username/ecommerce-store"
+    tags: ["React", "Tailwind", "Django", "JWT", "MVC"],
+    demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7370163765234929666/",
+    gituburl: "https://github.com/hibasekkah/E-commerce-WebSite"
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    Description: "Personal portfolio showcasing projects, blog, and contact form.",
+    title: "PowerLearn",
+    Description: "Responsive ASP.NET web application for managing a training center",
     image: "projects/project2.jpg",
-    tags: ["Next.js", "Tailwind", "Vercel"],
-    demoUrl: "https://myportfolio.com",
-    gituburl: "https://github.com/username/portfolio"
+    tags: ["ASP.Net", "Bootstrap", "JS", "HTML"],
+    demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7288190055834148864/",
+    gituburl: "https://github.com/hibasekkah/Siteweb-de-gestion-de-centre-de-formation"
   },
   {
     id: 3,
