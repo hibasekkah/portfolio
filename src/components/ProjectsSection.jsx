@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     title: "MorocAntik",
-    Description: "Designed and developed a full-stack e-commerce website for Moroccan traditional products",
+    Description: "Designed and developed a full-stack e-commerce website for Moroccan traditional products, focusing on usability, performance, and secure order management. Built with React, Django REST Framework, SQLite, and JWT authentication, the platform ensures responsiveness, modularity, and data protection.",
     image: "projects/project1.png",
     tags: ["React", "Tailwind", "Django", "JWT", "MVC", "SqLite"],
     demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7370163765234929666/",
@@ -13,7 +13,7 @@ const projects = [
   {
     id: 2,
     title: "PowerLearn",
-    Description: "Responsive ASP.NET web application for managing a training center",
+    Description: "The ASP.NET web application manages a training center with four user roles (guest, participant, instructor, administrator), each having tailored functionalities. Designed to be responsive, it streamlines administrative and educational management while enhancing the user experience.",
     image: "projects/project2.png",
     tags: ["ASP.Net", "Bootstrap", "JS", "HTML", "SqlServer", "MVC"],
     demoUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7288190055834148864/",
@@ -22,11 +22,29 @@ const projects = [
   {
     id: 3,
     title: "Plenitude Education",
-    Description: "full-stack web application to digitize and streamline professional training management.",
+    Description: "Developed a full-stack web application to digitize and streamline professional training management, integrating role-based access, planning, and automated document generation. Built with Laravel, React, and JWT-secured APIs, the solution enhanced efficiency, usability, and data confidentiality.",
     image: "projects/project3.png",
     tags: ["React", "Laravel", "Tailwind", "JWT", "MVC", "MySQL"],
     demoUrl: "#",
     gituburl: "https://github.com/hibasekkah/PlenitudeEducation"
+  },
+  {
+    id: 4,
+    title: "Delivery Route Optimization Platform",
+    Description: "Developed a SaaS solution for delivery route optimization, integrating constraints like truck capacity, goods type, time windows, and traffic restrictions. The platform reduces costs through fuel optimization, minimizes empty kilometers, enables resource sharing, and supports sustainability with CO₂ emission tracking and eco-friendly route suggestions, while offering real-time dynamic replanning.",
+    image: "projects/project4.png",
+    tags: ["in progress"],
+    demoUrl: "#",
+    gituburl: "#"
+  },
+  {
+    id: 4,
+    title: "Delivery Route Optimization Platform",
+    Description: "A platform that analyzes the financial health of SMEs in real time by monitoring invoices, orders, cash flow, banking behavior, and open banking data.AI assigns a dynamic credit score and connects SMEs with investors and banks to obtain instant and flexible financing.Value Proposition: It reduces risk for investors while accelerating SMEs’ access to credit.",
+    image: "projects/project5.png",
+    tags: ["in progress"],
+    demoUrl: "#",
+    gituburl: "#"
   },
 ];
 

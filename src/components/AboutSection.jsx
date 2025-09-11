@@ -1,4 +1,4 @@
-import { Briefcase, BriefcaseBusiness, Code, User } from "lucide-react";
+import { Briefcase, BriefcaseBusiness, ChartNoAxesCombined, Code, LockKeyhole, User } from "lucide-react";
 
 
 export const AboutSection = () =>{
@@ -10,21 +10,29 @@ export const AboutSection = () =>{
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6">
+                <div className="space-y-3">
                     <h3 className="text-2xl font-semibold">Passionate about crafting seamless digital experiences.</h3>
 
                     <p className="text-muted-foreground">
-                        I am a software engineer passionate about building modern, scalable, and high-quality applications. 
-                        I focus on designing solutions that are efficient, secure, and user-friendly, 
-                        always aiming to create meaningful digital experiences that make an impact.
+                        I am a Computer Science Engineer with strong expertise in web development and data-driven applications. 
+                        I specialize in building modern, scalable, and user-friendly digital platforms that combine technical excellence with real business impact.
+
 
                     </p>
                         
                     <p className="text-muted-foreground">
-                        Driven by innovation and problem-solving, 
-                        I enjoy turning ideas into real products that bring value to users and organizations. 
-                        I thrive in collaborative environments where creativity and teamwork are essential to delivering successful projects.   
+                        My experience extends across key industries such as Logistics Tech, FinTech, and E-commerce, 
+                        where I leverage both my technical skills and my understanding of business processes to design solutions that are reliable, 
+                        efficient, and tailored to industry needs.
 
+
+                    </p>
+
+                    <p className="text-muted-foreground">
+            
+                        Passionate about innovation, I focus on developing future-proof applications that integrate web technologies, 
+                        data insights, and domain expertise to help organizations optimize operations, 
+                        enhance customer experience, and drive growth in today’s digital economy.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -42,26 +50,26 @@ export const AboutSection = () =>{
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-6">
-                    <div className="gradient-border p-6 card-hover">
-                        <div className="flex items-start gap-4">
+                <div className="grid grid-cols-1 gap-3">
+                    <div className="gradient-border p-3 card-hover">
+                        <div className="flex items-start gap-3">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Code className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> Web Development</h4>
-                                <p className="text-muted-foreground">Creating responsive websites and web applications with modern frameworks. </p>
+                                <h4 className="font-semibold text-lg"> Web & Data Development </h4>
+                                <p className="text-muted-foreground">Building scalable, data-driven web applications and platforms that deliver real business impact across industries.. </p>
                             </div>
                         </div>
                     </div>
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <User className="h-6 w-6 text-primary"/>
+                                <ChartNoAxesCombined className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> Authentication & Security</h4>
-                                <p className="text-muted-foreground">Implementing secure access, role management, and data protection features. </p>
+                                <h4 className="font-semibold text-lg"> Industry-Focused Solutions</h4>
+                                <p className="text-muted-foreground">Designing and delivering tailored applications in Logistics Tech, FinTech, and E-commerce to optimize operations and drive growth. </p>
                             </div>
                         </div>
                     </div>
@@ -73,6 +81,17 @@ export const AboutSection = () =>{
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg"> Project Management</h4>
                                 <p className="text-muted-foreground">Leading projects from conception to completion with agile methodologies. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="gradient-border p-6 card-hover">
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <LockKeyhole className="h-6 w-6 text-primary"/>
+                            </div>
+                            <div className="text-left">
+                                <h4 className="font-semibold text-lg"> Security & Reliability</h4>
+                                <p className="text-muted-foreground">Ensuring robust authentication, secure data management, and resilient architectures for mission-critical solutions. </p>
                             </div>
                         </div>
                     </div>

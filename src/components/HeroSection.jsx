@@ -17,7 +17,7 @@ export const HeroSection = () =>{
                         </span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foregraound max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    Software Engineer | I build Modern, Scalable, and User-Friendly Web Applications
+                    Software Engineer | Web & Data Developer | Logistics Tech | FinTech | E-commerce Tech
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
