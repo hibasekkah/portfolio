@@ -39,7 +39,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Delivery Route Optimization Platform",
+    title: "Financement intelligent B2B avec scoring IA",
     Description: "A platform that analyzes the financial health of SMEs in real time by monitoring invoices, orders, cash flow, banking behavior, and open banking data.AI assigns a dynamic credit score and connects SMEs with investors and banks to obtain instant and flexible financing.Value Proposition: It reduces risk for investors while accelerating SMEs’ access to credit.",
     image: "projects/project5.png",
     tags: ["in progress"],
